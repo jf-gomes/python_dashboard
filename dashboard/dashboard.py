@@ -10,9 +10,10 @@ class Dashboard:
         st.title("📱 Social Media Impact in Students Lives")
 
         self.df = DataLoader.load_data()
+        # Tabs creation
         self.tabs = TabFactory(self.df)
 
-    # Tabs creation
+    # Tabs execution
     def run(self):
         self.tabs.tab_sleep_vs_mental_health()
         self.tabs.tab_platforms_by_country()
