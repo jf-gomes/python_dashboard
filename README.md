@@ -17,7 +17,7 @@ This project uses a data set (.csv) with information about over 700 students, wi
 - Relationship status
 - Country of origin
 
-The goal is to analyze this variables as interactive graphs.
+The goal is to analyze this variables with interactive graphs.
 
 ---
 
@@ -28,14 +28,14 @@ The goal is to analyze this variables as interactive graphs.
 - [Pandas](https://pandas.pydata.org/)
 - [Seaborn](https://seaborn.pydata.org/)
 - [Matplotlib](https://matplotlib.org/)
-- Docker (opcional, para rodar em container)
+- Docker (optional, to run the application in a container)
 
 ---
 
 ## 🗂️ Project structure
 
 ```
-students_social_media_addiction_dashboard/
+python_dashboard/
 │
 ├── app.py
 ├── data/
@@ -56,16 +56,16 @@ students_social_media_addiction_dashboard/
 The dashboard has 4 main tabs:
 
 1. **😴 Sleep x Mental Health**
-   Relation between hours of sleep and mental health score, separated by genre.
+   - Relation between hours of sleep and mental health score, separated by genre.
 
 2. **🌍 Platforms per Country**
-   Shows what social media are most used in each country.
+   - Shows what social media are most used in each country.
 
 3. **🎓 Daily Usage per Academic Level**
-   Compares the average time spent in social media according to academic level.
+   - Compares the average time spent in social media according to academic level.
 
 4. **📊 Countries With Higher Daily Usage**
-   List top 10 countries with higher average daily usage (hours).
+   - List top 10 countries with higher average daily usage (hours).
 
 ---
 
@@ -75,7 +75,7 @@ The dashboard has 4 main tabs:
 
 ```
 git clone https://github.com/jf-gomes/python_dashboard.git
-cd social-media-dashboard
+cd python_dashboard
 ```
 
 2. **Create a virtual environment (optional, but recommended)**
