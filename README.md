@@ -1,18 +1,10 @@
 # 📊 Python Dashboard: Analysis of Students Social Media Addiction
 
-:us:
-
 An interactive dashboard made with **Python** and **Streamlit** to analyze the impact of social media usage in the life of students around the world. The project allows you to explore data such as average usage time, mental health, sleep, most used platforms and more.
-
-:brazil:
-
-Um painel interativo desenvolvido com **Python** e **Streamlit** para analisar o impacto do uso de redes sociais na vida de estudantes ao redor do mundo. O projeto permite explorar dados como tempo médio de uso, saúde mental, sono, plataformas mais utilizadas e muito mais.
 
 ---
 
-## 🔍 :brazil: Visão Geral / :us: Overview
-
-:us:
+## 🔍 Overview
 
 This project uses a data set (.csv) with information about over 700 students, with variables like:
 
@@ -27,24 +19,9 @@ This project uses a data set (.csv) with information about over 700 students, wi
 
 The goal is to analyze this variables as interactive graphs.
 
-:brazil:
-
-Este projeto utiliza um conjunto de dados (.csv) contendo informações de mais de 700 estudantes, com variáveis como:
-
-- Média de horas diárias nas redes sociais
-- Qual plataforma mais utilizada
-- Se afeta ou não o desempenho acadêmico
-- Quantidade de horas de sono por noite
-- Nível acadêmico
-- Pontuação de saúde mental
-- Status de relacionamento
-- País de origem
-
-O objetivo é analisar essas variáveis com gráficos dinâmicos e interativos.
-
 ---
 
-## 🚀 :brazil: Tecnologias Utilizadas / :us: Used Technologies
+## 🚀 Used Technologies
 
 - [Python 3.8+](https://www.python.org/)
 - [Streamlit](https://streamlit.io/)
@@ -55,7 +32,7 @@ O objetivo é analisar essas variáveis com gráficos dinâmicos e interativos.
 
 ---
 
-## 🗂️ :brazil: Estrutura do Projeto / :us: Project structure
+## 🗂️ Project structure
 
 ```
 students_social_media_addiction_dashboard/
@@ -74,40 +51,34 @@ students_social_media_addiction_dashboard/
 
 ---
 
-## 📈 :brazil: Funcionalidades / :us: Funcionalities
-
-:us:
+## 📈 Features
 
 The dashboard has 4 main tabs:
 
-:brazil:
+1. **😴 Sleep x Mental Health**
+   Relation between hours of sleep and mental health score, separated by genre.
 
-O dashboard contém 4 abas principais:
+2. **🌍 Platforms per Country**
+   Shows what social media are most used in each country.
 
-1. **😴 :brazil: Sono x Saúde Mental / :us: Sleep x Mental Health**  
-   Relação entre horas de sono e pontuação de saúde mental, separada por gênero.
+3. **🎓 Daily Usage per Academic Level**
+   Compares the average time spent in social media according to academic level.
 
-2. **🌍 :brazil: Plataformas por País / :us: Platforms per Country**  
-   Mostra quais redes sociais são mais utilizadas em cada país.
-
-3. **🎓 :brazil: Uso Diário por Nível Acadêmico / :us: Daily Usage per Academic Level**  
-   Compara o tempo médio diário em redes sociais de acordo com o nível acadêmico.
-
-4. **📊 :brazil: Países com Maior Uso Diário / :us: Countries With Higher Daily Usage**  
-   Lista os 10 países com maiores médias de uso diário.
+4. **📊 Countries With Higher Daily Usage**
+   List top 10 countries with higher average daily usage (hours).
 
 ---
 
-## ▶️ :brazil: Como Executar / :us: How to Run
+## ▶️ How to Run
 
-1. **:brazil: Clone o repositório / :us: Clone this repo**
+1. **Clone this repo**
 
 ```
 git clone https://github.com/jf-gomes/python_dashboard.git
 cd social-media-dashboard
 ```
 
-2. **:brazil: Crie um ambiente virtual (opcional, mas recomendado) / :us: Create a virtual environment (optional, but recommended)**
+2. **Create a virtual environment (optional, but recommended)**
 
 ```
 python -m venv venv
@@ -115,19 +86,19 @@ source venv/bin/activate  # macOS/Linux
 venv\Scripts\activate     # Windows
 ```
 
-3. **:brazil: Instale as dependências / :us: Install dependecies**
+3. **Install dependecies**
 
 ```
 pip install -r requirements.txt
 ```
 
-4. **:brazil: Execute a aplicação / :us: Run application**
+4. **Run application**
 
 ```
 streamlit run app.py
 ```
 
-5. **:brazil: Acesse o painel no navegador / :us: Access the dashboard on your browser**
+5. **Access the dashboard on your browser**
 
 http://localhost:8501
 
