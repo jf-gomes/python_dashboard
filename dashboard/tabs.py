@@ -26,11 +26,15 @@ class TabFactory:
     def tab_platforms_by_country(self):
         with self.tab2:
             st.subheader("Top Platforms By Country")
+            countries = self.df["Country"].dropna().unique()
+            countries.sort()
+            selected_country = st.selectbox("Selecione um país para visualizar:", countries)
+            filtered_df = self.df[self.df["Country"] == selected_country]
             fig, ax = plt.subplots(figsize=(10, 6))
-            sns.countplot(data=self.df, y="Country", hue="Most_Used_Platform",
-                          palette="tab10", order=self.df["Country"].value_counts().index, ax=ax)
-            ax.set_title("Most used platforms by country")
+            sns.countplot(data=filtered_df, y="Country", hue="Most_Used_Platform", palette="tab10", ax=ax)
+            ax.set_title(f"Plataformas mais usadas em {selected_country}")
             st.pyplot(fig)
+
 
     def tab_usage_by_academic_level(self):
         with self.tab3:
